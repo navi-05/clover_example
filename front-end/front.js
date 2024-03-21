@@ -1,7 +1,7 @@
   const container = document.getElementById('container')
   const getButton = document.getElementById('get')
 
-  const baseUrl = `https://clover-example.onrender.com`
+  const baseUrl = `https://clover-example.onrender.com/products`
 
   getButton.addEventListener('click', () => {
     fetch(baseUrl)
