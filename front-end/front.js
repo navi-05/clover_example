@@ -1,8 +1,10 @@
   const container = document.getElementById('container')
   const getButton = document.getElementById('get')
 
+  const baseUrl = `https://clover-example.onrender.com`
+
   getButton.addEventListener('click', () => {
-    fetch('http://localhost:3000/products')
+    fetch(baseUrl)
       .then(res => res.json())
       .then(data => generateUI(data.products))
   })
@@ -33,7 +35,7 @@
     e.preventDefault();
     const formData = e.target[0].value
 
-    fetch(`http://localhost:3000/products/${formData}`)
+    fetch(`${baseUrl}/${formData}`)
       .then(res => res.json())
       .then(data => generateUI(data))
   })
@@ -44,7 +46,7 @@
     e.preventDefault();
     const formData = e.target[0].value
 
-    fetch(`http://localhost:3000/products`, {
+    fetch(baseUrl, {
       method: "POST",
       headers: {
         "Content-Type": 'application/json'
