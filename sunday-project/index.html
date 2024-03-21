@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="relative h-screen flex flex-col gap-10 bg-gradient-to-tr px-6 py-8 from-black via-neutral-800 to-neutral-600">
+    <!-- Navbar -->
+    <div class="w-full flex flex-row justify-between text-5xl text-white">
+      <h1>Figma</h1>
+      <h1>Rent a car</h1>
+    </div>
+    
+    <!-- absolute image -->
+    <div class="w-2/4 absolute z-[2] top-1/2 left-[500px] -translate-x-1/2 -translate-y-1/2">
+      <img src="./car.png" alt="car" />
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden rounded-3xl h-full bg-neutral-100 w-3/4 ml-auto py-8 px-4 pr-8 flex flex-col justify-around">
+
+
+      <!-- Absolute Rect -->
+      <div class="absolute -left-[680px] -top-[20px] h-full rounded-3xl rotate-[30deg] w-full bg-black z-0">
+        Hello
+      </div>
+
+      <!-- Flex container  -->
+      <div class="w-2/3 ml-auto flex flex-row justify-between z-[1]">
+        <!-- Flex item 1 -->
+        <ul class="flex flex-row gap-2.5">
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+        </ul>
+
+        <!-- Flex item 2 -->
+        <div>
+          Rent a car
+        </div>
+      </div>
+
+      <!-- Main flex container -->
+      <div class="mt-20 w-1/2 ml-auto flex flex-col gap-8 items-end z-[1]">
+        <h1 class="font-bold text-4xl text-right">We're having a boring session ryt now!</h1>
+        <p class="text-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, esse alias reprehenderit repellendus vitae perferendis ut mollitia perspiciatis ipsa sequi? Atque saepe non exercitationem sunt hic mollitia eum dolorem commodi.</p>
+        <button class="bg-black text-white p-2 px-4 rounded-md ">
+          I want to leave now!
+        </button>
+      </div>
+
+      <!-- Second Nav bar -->
+      <div class="ml-auto mt-20 p-8 w-2/3 bg-white shadow-lg flex justify-around gap-5 z-[1]">
+        <button class="bg-black text-white p-2 px-4 rounded-md ">
+          I want to leave now!
+        </button>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+      </div>
+
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
