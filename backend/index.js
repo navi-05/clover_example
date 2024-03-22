@@ -18,3 +18,5 @@ app.use(morgan('dev'))
 app.use('/products', productRouter)
 
 app.listen(3000, () => console.log("SERVER STARTED"))
+
+module.exports = app;
